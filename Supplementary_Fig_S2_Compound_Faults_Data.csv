@@ -1,0 +1,18 @@
+## Figure 8(A): RMSE Accuracy (m) under Fault Conditions
+fault_condition,B1_Non_Replay,B4_Non_Replay,Ours_Proposed
+Light_Faults,0.22,0.62,0.19
+Moderate_Faults,0.26,0.82,0.19
+Extreme_Compound_Faults,0.33,1.08,0.21
+
+## Figure 8(B): Track-Survival Rate (%) under Fault Conditions
+fault_condition,B1_Non_Replay,B4_Non_Replay,Ours_Proposed
+Light_Faults,92,86,99
+Moderate_Faults,86,67,99
+Extreme_Compound_Faults,30,28,99
+
+## Figure 8(C): P99 Tick Latency (ms) under Fault Conditions
+## Note: B4 Extreme = Unbounded (represented as >1000)
+fault_condition,B1_Non_Replay,B4_Non_Replay,Ours_Proposed
+Light_Faults,7,8,5
+Moderate_Faults,50,200,7
+Extreme_Compound_Faults,7,1000,7

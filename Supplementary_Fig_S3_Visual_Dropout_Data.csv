@@ -1,0 +1,41 @@
+## Figure 9(a): Time-to-First-Lock (s) - No Cueing vs With Cueing
+range,No_Cueing_s,With_Cueing_s
+Near_Range,2.50,0.58
+Far_Range,1.90,0.72
+
+## Figure 9(b): RMSE (m) During Visual Dropout and Recovery
+## t_dropout ≈ 5s, t_recovery ≈ 15s
+time_s,Baseline_RMSE_m,Ours_Replay_RMSE_m
+0.0,0.8,0.8
+1.0,0.8,0.8
+2.0,0.8,0.8
+3.0,0.8,0.8
+4.0,0.8,0.8
+5.0,0.8,0.8
+5.2,14.0,2.5
+5.5,15.0,3.0
+6.0,15.2,3.2
+7.0,15.3,3.5
+8.0,15.4,3.5
+9.0,15.4,3.6
+10.0,15.5,3.6
+11.0,15.5,3.7
+12.0,15.5,3.7
+13.0,15.5,3.8
+14.0,15.5,3.8
+15.0,15.5,3.8
+15.2,14.0,4.5
+15.5,5.0,2.0
+16.0,1.5,1.0
+17.0,0.9,0.9
+18.0,0.8,0.8
+19.0,0.8,0.8
+20.0,0.8,0.8
+21.0,0.8,0.8
+
+## Figure 9(c): Active Estimator / State Transitions
+time_range_s,estimator,state_label
+0-5,MSC-EKF,Initial
+5-15,IMM-UKF,Tracking
+15-15 (dropout),MSC-EKF,Visual_Loss
+15-21,IMM-UKF,Recovery_and_Relock
