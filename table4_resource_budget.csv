@@ -1,0 +1,17 @@
+parameter,value,budget_limit,notes
+tick_rate_hz,200,—,Nominal operating point
+per_tick_cap_M,1,—,Max measurements processed per tick
+ring_buffer_depth_L,300,—,Checkpoints stored
+ring_buffer_window_Tb_s,1.5,≥1.5 s to cover acoustic regime,Tb = L×Δt
+ring_buffer_SRAM_KB,298,512 KB ECC SRAM,Static allocation on TMS570LC4357
+queue_depth_Qmax,16,—,Max pending measurement packets
+queue_SRAM_KB,8,—,
+analytical_WCET_upper_bound_ms,3.97,5.0 ms tick budget,Worst-case: M×(1+L) model evaluations
+observed_p99_latency_nominal_ms,2.5,5.0 ms tick budget,Nominal operation
+observed_p99_latency_deep_replay_ms,4.12,5.0 ms tick budget,Deep acoustic-replay case
+total_SRAM_used_KB,386,512 KB available,75.4% utilization
+total_SRAM_utilization_pct,75.4,100%,
+RK4_step_overhead_us,12,~3 μs Euler,4× g(·) evaluations vs 1× for Euler
+unscented_covariance_mapping_ms,0.2,5.0 ms tick budget,MSC→Cartesian mode-switch cost
+processor,TMS570LC4357,—,"TI safety-island MCU, 512 KB ECC SRAM"
+perception_processor,Jetson Orin Nano,—,Layer 1 front-end

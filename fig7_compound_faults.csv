@@ -1,0 +1,13 @@
+fault_profile,dropout_pct,jitter_ms,burst_frames,oosm_enabled,config,RMSE_3D_mean_m,RMSE_3D_sd_m,track_survival_rate_pct,p99_tick_latency_ms,bearing_only_fallback_triggered,overflow_observed,max_backlog
+Light Faults,5,20,0,false,B1,1.8,0.3,100.0,0.8,no,no,1
+Light Faults,5,20,0,false,B4,1.4,0.2,100.0,2.3,no,no,2
+Light Faults,5,20,0,false,Ours,1.2,0.2,100.0,2.5,no,no,2
+Moderate Faults,15,50,5,false,B1,6.5,1.2,72.0,0.9,no,no,1
+Moderate Faults,15,50,5,false,B4,2.1,0.4,97.0,2.4,no,no,2
+Moderate Faults,15,50,5,false,Ours,1.7,0.3,99.0,2.5,no,no,2
+Extreme Faults,30,100,10,false,B1,18.0,3.5,38.0,1.1,no,no,1
+Extreme Faults,30,100,10,false,B4,3.5,0.6,89.0,2.6,yes,no,4
+Extreme Faults,30,100,10,false,Ours,2.6,0.5,95.0,2.7,yes,no,4
+Compound Faults,30,100,15,true,B1,42.0,8.0,15.0,unbounded,no,no,1
+Compound Faults,30,100,15,true,B4,5.2,0.9,78.0,3.1,yes,no,4
+Compound Faults,30,100,15,true,Ours,3.8,0.7,91.0,3.2,yes,no,4

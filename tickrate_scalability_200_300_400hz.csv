@@ -1,0 +1,4 @@
+tick_rate_hz,tick_budget_ms,p95_tick_latency_ms,p99_tick_latency_ms,deadline_miss_rate_pct,miss_condition,max_backlog_observed,recommended_L_buffer_depth,notes
+200,5.0,1.8,2.5,0.0,none,4,300,Validated nominal operating point; zero misses all scenarios
+300,3.33,2.4,3.1,0.4,deep acoustic replay only (δ>800ms),4,200,Viable with slightly reduced buffer depth
+400,2.5,3.1,4.1,2.3,exclusively deep acoustic replay cases (δ>700ms),4,150,Stress-test regime; not default hard-RT point; use L≤150 or secondary-core offload

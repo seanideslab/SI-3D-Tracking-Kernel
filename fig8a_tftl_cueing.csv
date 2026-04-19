@@ -1,0 +1,5 @@
+sub_figure,range_band,cueing,TFTL_mean_s,TFTL_sd_s,TFTL_reduction_pct
+a_TFTL,near_range_100_300m,no_cueing,1.1,0.2,
+a_TFTL,near_range_100_300m,with_cueing,0.2,0.05,82.0
+a_TFTL,far_range_300_800m,no_cueing,3.2,0.4,
+a_TFTL,far_range_300_800m,with_cueing,0.4,0.08,87.0

@@ -1,0 +1,9 @@
+sub_figure,scenario,range_band,cueing_success_pct,notes
+c_cueing_success,S1,near_range,98.0,
+c_cueing_success,S1,far_range,95.0,
+c_cueing_success,S2,near_range,96.0,
+c_cueing_success,S2,far_range,91.0,
+c_cueing_success,S3,near_range,95.0,
+c_cueing_success,S3,far_range,78.0,residual cueing error from jerk/time-varying turn-rate
+c_cueing_success,S4,near_range,93.0,
+c_cueing_success,S4,far_range,78.0,residual cueing error from jerk/time-varying turn-rate
